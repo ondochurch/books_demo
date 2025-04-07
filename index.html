@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Book Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Modern Book Display</h1>
+            <p class="subtitle">Click on any book or watch the automatic showcase</p>
+        </header>
+
+        <div class="books-grid" id="booksGrid"></div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="book-detail" id="bookDetail">
+        <button class="close-btn" id="closeBtn">✕</button>
+        <div class="detail-header">
+            <img class="detail-cover" id="detailCover" src="" alt="Book Cover">
+            <div class="detail-info">
+                <h2 class="detail-title" id="detailTitle"></h2>
+                <p class="detail-author" id="detailAuthor"></p>
+                <p class="detail-description" id="detailDescription"></p>
+            </div>
+        </div>
+        
+        <div class="reviews-section">
+            <h3>Reader Reviews</h3>
+            <div class="review" id="review1">
+                <p class="review-text"></p>
+                <p class="review-author"></p>
+            </div>
+            <div class="review" id="review2">
+                <p class="review-text"></p>
+                <p class="review-author"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

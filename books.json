@@ -1,0 +1,422 @@
+[
+    {
+        "cover": "002293e557171989a53a18d1d2d6f8b2.png",
+        "title": "The Silent Echo",
+        "author": "Emily Richardson",
+        "description": "A psychological thriller about a woman who begins hearing voices from her past after moving into a new apartment. As the voices grow louder, she uncovers a dark secret about the building's history.",
+        "reviews": [
+            {
+                "text": "Couldn't put it down! The suspense builds perfectly until the shocking finale. ⭐️⭐️⭐️⭐️⭐️",
+                "author": "— Sarah Johnson"
+            },
+            {
+                "text": "The characters felt so real, especially the protagonist's struggle with her sanity. A masterpiece of modern thriller writing.",
+                "author": "— Michael Chen"
+            }
+        ]
+    },
+    {
+        "cover": "00432673c72540247da92bfde254ebaf.png",
+        "title": "Beneath the Azure Sky",
+        "author": "James Peterson",
+        "description": "An epic fantasy adventure set in a world where the sky is literally the limit. Follow young hero Kael as he discovers his ability to manipulate the very fabric of the atmosphere.",
+        "reviews": [
+            {
+                "text": "The world-building is incredible - I've never read anything quite like this. ⭐️⭐️⭐️⭐️",
+                "author": "— David Wilson"
+            }
+        ]
+    },
+    {
+        "cover": "007f54286615d18b7807139c5bd3beeb.png",
+        "title": "Midnight in Paris",
+        "author": "Sophie Laurent",
+        "description": "A romantic tale of an American writer who finds himself mysteriously transported to 1920s Paris every night at midnight. There he meets literary icons and discovers the true meaning of love.",
+        "reviews": [
+            {
+                "text": "This book completely changed my perspective on time and love. The prose is lyrical and the story is captivating.",
+                "author": "— Emma Thompson"
+            },
+            {
+                "text": "Not since The Time Traveler's Wife have I been so moved by a love story. ⭐️⭐️⭐️⭐️⭐️",
+                "author": "— Robert Garcia"
+            }
+        ]
+    },
+    {
+        "cover": "00aeb3cb624b89819a2643316c98a396.png",
+        "title": "The Alchemist's Daughter",
+        "author": "Victoria Clarke",
+        "description": "Historical fiction set in Elizabethan England, following the brilliant daughter of an alchemist who must use her knowledge of science and magic to clear her father's name.",
+        "reviews": [
+            {
+                "text": "The perfect blend of history and fantasy. I learned so much about alchemy while being thoroughly entertained.",
+                "author": "— Olivia Martinez"
+            }
+        ]
+    },
+    {
+        "cover": "00fcc1c0d34e0f8aa5ccc69a50908d3e.png",
+        "title": "Shadows in the Mist",
+        "author": "Daniel Blackwood",
+        "description": "A horror novel about a small town surrounded by an unnatural mist that brings people's darkest fears to life. When the mist arrives, no one is safe from their own imagination.",
+        "reviews": [
+            {
+                "text": "I slept with the lights on for a week after reading this. The atmosphere is incredibly creepy. ⭐️⭐️⭐️⭐️",
+                "author": "— Jennifer Lee"
+            },
+            {
+                "text": "The plot twists kept me guessing until the very end. A must-read for horror fans!",
+                "author": "— Thomas Wright"
+            }
+        ]
+    },
+    {
+        "cover": "018465e9262590a71115823ef846803c.png",
+        "title": "The Glass Horizon",
+        "author": "Maria Sanchez",
+        "description": "A science fiction novel set on a generation ship traveling to a new world. The story explores what happens when the passengers begin questioning whether their destination is real or just another illusion.",
+        "reviews": [
+            {
+                "text": "Thought-provoking and beautifully written. Makes you question the nature of reality.",
+                "author": "— Kevin Brown"
+            }
+        ]
+    },
+    {
+        "cover": "01da54513e31ad4137e50e5e9288a749.png",
+        "title": "Echoes from the Abyss",
+        "author": "Richard Donovan",
+        "description": "Deep sea explorers discover something ancient and terrifying at the bottom of the Mariana Trench. As they investigate, crew members begin experiencing strange visions and hearing voices calling from the deep.",
+        "reviews": [
+            {
+                "text": "The deep sea setting makes this horror novel uniquely terrifying. I'll never look at the ocean the same way again. ⭐️⭐️⭐️⭐️⭐️",
+                "author": "— Lisa Wong"
+            },
+            {
+                "text": "The author's background in marine biology really shows - the scientific details make the horror elements even more believable.",
+                "author": "— Paul Rodriguez"
+            }
+        ]
+    },
+    {
+        "cover": "01fe6f09b9cc92e63655b6927e123f53.png",
+        "title": "The Crimson Veil",
+        "author": "Amanda Pierce",
+        "description": "A gothic mystery about a young woman who inherits a mansion with a dark secret. Behind a crimson veil in the attic lies a mystery that has haunted the family for generations.",
+        "reviews": [
+            {
+                "text": "Atmospheric and suspenseful, with a twist I never saw coming. Perfect for fans of Daphne du Maurier.",
+                "author": "— Elizabeth Carter"
+            }
+        ]
+    },
+    {
+        "cover": "00382709a5588a7ce99137d8233e5da4.png",
+        "title": "Dancing with Shadows",
+        "author": "Nathaniel Gray",
+        "description": "A noir detective story with a supernatural twist. Private eye Jack Sterling can see people's shadows move independently, revealing their darkest secrets - until one shadow starts following him.",
+        "reviews": [
+            {
+                "text": "The perfect blend of hardboiled detective fiction and supernatural horror. Sterling is a fantastic protagonist. ⭐️⭐️⭐️⭐️",
+                "author": "— Rachel Kim"
+            },
+            {
+                "text": "I've read this three times and find new depth each time. The shadow concept is brilliantly executed.",
+                "author": "— Mark Taylor"
+            }
+        ]
+    },
+    {
+        "cover": "0046766e036732d26d09d6096f0d6a24.png",
+        "title": "The Forgotten Key",
+        "author": "Isabella Montague",
+        "description": "A young antiquarian discovers a mysterious key that opens doors to different time periods. But each time she uses it, she loses a memory from her own timeline.",
+        "reviews": [
+            {
+                "text": "A beautiful meditation on memory and identity wrapped in a time travel adventure. ⭐️⭐️⭐️⭐️⭐️",
+                "author": "— Sophia Chen"
+            }
+        ]
+    },
+    {
+        "cover": "0083233cb94a970ea4f4283ce852ddf3.png",
+        "title": "The Book of Lost Names",
+        "author": "Ethan Carter",
+        "description": "In a world where names have power, a librarian discovers a book containing the names of everyone who has ever been forgotten. When she reads her own name in it, she must race against time to discover why.",
+        "reviews": [
+            {
+                "text": "The concept is original and beautifully executed. I couldn't put it down!",
+                "author": "— Daniel Park"
+            },
+            {
+                "text": "The way the author explores the power of memory and identity is masterful. ⭐️⭐️⭐️⭐️",
+                "author": "— Jessica Adams"
+            }
+        ]
+    },
+    {
+        "cover": "00b72752bf4f519b9c4e6b09da0aa3dc.png",
+        "title": "Whispers of the Forgotten",
+        "author": "Claire Bennett",
+        "description": "Archaeologists uncover an ancient temple where the walls whisper secrets in dead languages. As they translate the messages, they realize the temple is warning them about something coming.",
+        "reviews": [
+            {
+                "text": "The archaeological details feel authentic and the supernatural elements are genuinely creepy. A perfect blend!",
+                "author": "— Andrew Lee"
+            }
+        ]
+    },
+    {
+        "cover": "013ea9355ff483610a041b04f6b726d9.png",
+        "title": "The Last Ember",
+        "author": "Marcus Stone",
+        "description": "In a post-apocalyptic world where fire is the last source of magic, a young firekeeper must protect the last ember from those who would use its power for destruction.",
+        "reviews": [
+            {
+                "text": "The world-building is incredible - I could feel the cold of this dying world. ⭐️⭐️⭐️⭐️⭐️",
+                "author": "— Tina Reynolds"
+            },
+            {
+                "text": "The protagonist's journey from reluctant hero to determined leader is beautifully written.",
+                "author": "— George Wilson"
+            }
+        ]
+    },
+    {
+        "cover": "01914070ab6fd586288e7baa941ace32.png",
+        "title": "A Thousand Splendid Stars",
+        "author": "Layla Hassan",
+        "description": "A sweeping historical novel following three generations of women in Afghanistan, from the 1950s to the present day, and their struggles, loves, and dreams under changing regimes.",
+        "reviews": [
+            {
+                "text": "Heartbreaking and beautiful. Gave me new perspective on a culture I knew little about.",
+                "author": "— Margaret Cho"
+            }
+        ]
+    },
+    {
+        "cover": "01e57062505c5ec863fd688c2e886397.png",
+        "title": "The Invisible Life of Addie LaRue",
+        "author": "V.E. Schwab",
+        "description": "A young woman makes a Faustian bargain to live forever but is cursed to be forgotten by everyone she meets. Her journey through centuries changes when she meets a man who remembers her.",
+        "reviews": [
+            {
+                "text": "This book completely changed my perspective on immortality and legacy. The prose is stunning. ⭐️⭐️⭐️⭐️⭐️",
+                "author": "— Samantha Lee"
+            },
+            {
+                "text": "Addie is one of the most compelling protagonists I've encountered in years.",
+                "author": "— Derek Johnson"
+            }
+        ]
+    },
+    {
+        "cover": "0234349ec29a3480b33717c89d0d07f8.png",
+        "title": "Where the Crawdads Sing",
+        "author": "Delia Owens",
+        "description": "For years, rumors of the 'Marsh Girl' have haunted Barkley Cove. So when handsome Chase Andrews is found dead, the locals immediately suspect Kya Clark. But Kya is not what they say.",
+        "reviews": [
+            {
+                "text": "The marsh itself becomes a character in this beautiful, heartbreaking novel. A masterpiece.",
+                "author": "— Alice Waters"
+            }
+        ]
+    },
+    {
+        "cover": "003eff228d4099b39e9ccb9337293429.png",
+        "title": "The Night Circus",
+        "author": "Erin Morgenstern",
+        "description": "The circus arrives without warning. It is simply there, when yesterday it was not. Within its black-and-white striped canvas tents is an utterly unique experience full of breathtaking amazements.",
+        "reviews": [
+            {
+                "text": "I've never read anything quite like this. The imagery is absolutely magical. ⭐️⭐️⭐️⭐️⭐️",
+                "author": "— Benjamin Moore"
+            },
+            {
+                "text": "The romance between the two magicians is as compelling as the magical competition between them.",
+                "author": "— Natalie King"
+            }
+        ]
+    },
+    {
+        "cover": "004bede6db82e845408b4d2b4cf9789e.png",
+        "title": "The Glass Hotel",
+        "author": "Emily St. John Mandel",
+        "description": "A captivating novel of money, beauty, white-collar crime, ghosts, and moral compromises in which a woman disappears from a container ship off the coast of Mauritania.",
+        "reviews": [
+            {
+                "text": "The way the author weaves together seemingly unrelated stories is masterful.",
+                "author": "— Christopher Bell"
+            }
+        ]
+    },
+    {
+        "cover": "0087a9eb49e988c828724e026b6167d1.png",
+        "title": "Project Hail Mary",
+        "author": "Andy Weir",
+        "description": "A lone astronaut must save the earth from disaster in this incredible new science-based thriller from the #1 New York Times bestselling author of The Martian.",
+        "reviews": [
+            {
+                "text": "Even better than The Martian! The science is fascinating and the alien character is unforgettable. ⭐️⭐️⭐️⭐️⭐️",
+                "author": "— Ryan Nguyen"
+            },
+            {
+                "text": "The problem-solving sequences are as tense as any action scene I've read.",
+                "author": "— Priya Patel"
+            }
+        ]
+    },
+    {
+        "cover": "00ba6c648b13f57ae8ad5099fb46ad9a.png",
+        "title": "The Midnight Library",
+        "author": "Matt Haig",
+        "description": "Between life and death there is a library. When Nora Seed finds herself in the Midnight Library, she has a chance to make things right by trying out all the other lives she might have lived.",
+        "reviews": [
+            {
+                "text": "A beautiful exploration of regret and the paths not taken. Made me appreciate my own life more.",
+                "author": "— Olivia Martin"
+            }
+        ]
+    },
+    {
+        "cover": "013f647ff4a014a85d49f22ff2a95f61.png",
+        "title": "Circe",
+        "author": "Madeline Miller",
+        "description": "In the house of Helios, god of the sun, a daughter is born. But Circe is a strange child - not powerful like her father, nor viciously alluring like her mother.",
+        "reviews": [
+            {
+                "text": "Miller's retelling of Greek mythology is nothing short of brilliant. Circe's voice is unforgettable. ⭐️⭐️⭐️⭐️⭐️",
+                "author": "— Diana Wilson"
+            },
+            {
+                "text": "The prose is so beautiful I found myself rereading passages just to savor them.",
+                "author": "— Thomas Reed"
+            }
+        ]
+    },
+    {
+        "cover": "0196c6de55bcc43cac38c1d87439eedc.png",
+        "title": "Klara and the Sun",
+        "author": "Kazuo Ishiguro",
+        "description": "Klara is an Artificial Friend with outstanding observational qualities who remains hopeful that a customer will soon choose her from the store.",
+        "reviews": [
+            {
+                "text": "Ishiguro explores what it means to love and be human through the eyes of an AI. Profound and moving.",
+                "author": "— Rachel Zhang"
+            }
+        ]
+    },
+    {
+        "cover": "01f36fb05d8fc0ad046363d4f2e3e706.png",
+        "title": "The Vanishing Half",
+        "author": "Brit Bennett",
+        "description": "The Vignes twin sisters will always be identical. But after growing up together in a small, southern black community and running away at age sixteen, their lives take radically different courses.",
+        "reviews": [
+            {
+                "text": "A stunning exploration of race, identity, and family. The characters will stay with me forever. ⭐️⭐️⭐️⭐️⭐️",
+                "author": "— Jamal Williams"
+            },
+            {
+                "text": "The way Bennett handles the complex themes with such nuance is masterful.",
+                "author": "— Lauren Kim"
+            }
+        ]
+    },
+    {
+        "cover": "003f7faaeb0feccd4c6f267851f0664e.png",
+        "title": "Piranesi",
+        "author": "Susanna Clarke",
+        "description": "Piranesi's house is no ordinary building: its rooms are infinite, its corridors endless, its walls are lined with thousands upon thousands of statues.",
+        "reviews": [
+            {
+                "text": "The most original fantasy novel I've read in years. The House is one of the most fascinating settings ever created.",
+                "author": "— Ethan Stone"
+            }
+        ]
+    },
+    {
+        "cover": "007c80ffc8bc0f76e1ee86b0782305cb.png",
+        "title": "The Song of Achilles",
+        "author": "Madeline Miller",
+        "description": "A tale of gods, kings, immortal fame, and the human heart, this is a breathtaking retelling of the legend of Achilles and Patroclus.",
+        "reviews": [
+            {
+                "text": "I've never cried so hard reading a book. The love story is beautiful and heartbreaking. ⭐️⭐️⭐️⭐️⭐️",
+                "author": "— Alex Chen"
+            },
+            {
+                "text": "Miller brings the ancient world to life with such vivid detail and emotional depth.",
+                "author": "— Sophia Martinez"
+            }
+        ]
+    },
+    {
+        "cover": "00a96bde8ddcc7b73674ce150cbbb76c.png",
+        "title": "Hamnet",
+        "author": "Maggie O'Farrell",
+        "description": "A luminous portrait of a marriage, a shattering evocation of a family ravaged by grief and loss, and a tender reimagining of a boy whose life has been all but forgotten.",
+        "reviews": [
+            {
+                "text": "The depiction of grief is so raw and real it took my breath away. A masterpiece.",
+                "author": "— Jonathan Hill"
+            }
+        ]
+    },
+    {
+        "cover": "00c75ba1de6d71b8980b02bcbe248d97.png",
+        "title": "The House in the Cerulean Sea",
+        "author": "TJ Klune",
+        "description": "A magical island. A dangerous task. A burning secret. Linus Baker leads a quiet, solitary life. Until he is summoned to a mysterious orphanage where he must determine if six dangerous magical children are likely to bring about the end of the world.",
+        "reviews": [
+            {
+                "text": "The most heartwarming, uplifting book I've read in years. Like a warm hug in novel form. ⭐️⭐️⭐️⭐️⭐️",
+                "author": "— Michelle Wong"
+            },
+            {
+                "text": "The children are all so uniquely wonderful - especially Chauncey who wants to be a bellhop!",
+                "author": "— David Park"
+            }
+        ]
+    },
+    {
+        "cover": "017265e0501a86403f1a8bb267714674.png",
+        "title": "Cloud Cuckoo Land",
+        "author": "Anthony Doerr",
+        "description": "From the Pulitzer Prize-winning author of All the Light We Cannot See comes a story about children on the cusp of adulthood in worlds in peril, who find resilience, hope, and a book.",
+        "reviews": [
+            {
+                "text": "The way Doerr weaves together these seemingly disparate stories is nothing short of brilliant.",
+                "author": "— Emma Wilson"
+            }
+        ]
+    },
+    {
+        "cover": "01be6fda4bcd9463b13fa0aa53bacd21.png",
+        "title": "The Push",
+        "author": "Ashley Audrain",
+        "description": "A tense, page-turning psychological drama about the making and breaking of a family, told through the eyes of a woman whose experience of motherhood is nothing at all what she hoped for.",
+        "reviews": [
+            {
+                "text": "This book completely changed my perspective on motherhood. Chilling and unforgettable. ⭐️⭐️⭐️⭐️",
+                "author": "— Rebecca Jones"
+            },
+            {
+                "text": "The unreliable narrator is handled masterfully - I was never quite sure what to believe.",
+                "author": "— Daniel Kim"
+            }
+        ]
+    },
+    {
+        "cover": "01f4631e9d91b276a6de881f69058a16.png",
+        "title": "The Four Winds",
+        "author": "Kristin Hannah",
+        "description": "From the #1 New York Times bestselling author comes an epic novel of love and heroism set in the Great Depression, about a woman who must make an impossible choice.",
+        "reviews": [
+            {
+                "text": "Hannah brings the Dust Bowl era to life with such vivid detail. Elsa's strength is inspiring.",
+                "author": "— Margaret Adams"
+            }
+        ]
+    }
+]
