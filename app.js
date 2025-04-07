@@ -9,11 +9,11 @@ const config = {
     
     // Timing controls (seconds)
     timing: {
-        coverExpand: 5.7,
-        pauseAfterExpand: 5,
-        contentFadeIn: 5.7,
-        displayDuration: 15,
-        cycleDelay: 10
+        coverExpand: 0.7,
+        pauseAfterExpand: 2,
+        contentFadeIn: 0.7,
+        displayDuration: 10,
+        cycleDelay: 3
     },
     
     // Display settings
