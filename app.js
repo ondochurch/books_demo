@@ -1,43 +1,33 @@
-// ======================
 // CONFIGURATION SECTION
-// ======================
 const config = {
     // Grid layout
     grid: {
-        cols: 5,    // Number of columns
-        rows: 6,    // Number of rows (will show cols x rows books)
-        gap: "1.5rem" // Gap between grid items
+        cols: 5,
+        rows: 6,
+        gap: "1.5rem"
     },
     
-    // Timing controls (all values in seconds)
+    // Timing controls (seconds)
     timing: {
-        coverExpand: 0.5,    // Cover expansion animation duration
-        pauseAfterExpand: 2, // Pause after expansion before showing details
-        contentFadeIn: 0.7,  // Time for content to fade in
-        displayDuration: 10, // How long to show each book in auto mode
-        cycleDelay: 3        // Delay between book cycles in auto mode
+        coverExpand: 5.7,
+        pauseAfterExpand: 5,
+        contentFadeIn: 5.7,
+        displayDuration: 15,
+        cycleDelay: 10
     },
     
     // Display settings
     display: {
-        maxBooks: 30,       // Maximum number of books to show (0 for all)
-        randomOrder: true   // Whether to display books in random order
+        maxBooks: 30,
+        randomOrder: true
     }
 };
-
-// Calculate derived timing values
-const totalAnimationTime = 
-    config.timing.coverExpand + 
-    config.timing.pauseAfterExpand + 
-    config.timing.contentFadeIn;
-
-const totalCycleTime = totalAnimationTime + config.timing.displayDuration;
 
 // Global variables
 let booksData = [];
 let currentBookIndex = -1;
 
-// Helper function to shuffle array
+// Helper functions
 function shuffleArray(array) {
     const newArray = [...array];
     for (let i = newArray.length - 1; i > 0; i--) {
@@ -47,21 +37,47 @@ function shuffleArray(array) {
     return newArray;
 }
 
-// Load book data from JSON file
+function createParticles() {
+    const particlesContainer = document.querySelector('.particles');
+    particlesContainer.innerHTML = '';
+    
+    const particleCount = Math.floor(window.innerWidth / 20);
+    
+    for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        
+        const size = Math.random() * 8 + 2;
+        const posX = Math.random() * window.innerWidth;
+        const posY = Math.random() * window.innerHeight + window.innerHeight;
+        const delay = Math.random() * 5;
+        const duration = Math.random() * 15 + 10;
+        const alpha = Math.random() * 0.4 + 0.1;
+        
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+        particle.style.left = `${posX}px`;
+        particle.style.top = `${posY}px`;
+        particle.style.animationDelay = `${delay}s`;
+        particle.style.animationDuration = `${duration}s`;
+        particle.style.backgroundColor = `rgba(67, 97, 238, ${alpha})`;
+        particle.style.opacity = '0';
+        
+        particlesContainer.appendChild(particle);
+    }
+}
+
+// Book data and initialization
 async function loadBookData() {
     try {
         const response = await fetch('books.json');
-        if (!response.ok) {
-            throw new Error('Failed to load book data');
-        }
+        if (!response.ok) throw new Error('Failed to load');
         booksData = await response.json();
         
-        // Apply max books limit if configured
         if (config.display.maxBooks > 0 && booksData.length > config.display.maxBooks) {
             booksData = booksData.slice(0, config.display.maxBooks);
         }
         
-        // Randomize order if configured
         if (config.display.randomOrder) {
             booksData = shuffleArray(booksData);
         }
@@ -70,28 +86,23 @@ async function loadBookData() {
         autoShowBooks();
     } catch (error) {
         console.error('Error loading book data:', error);
-        // You could add a fallback here or show an error message to the user
         document.getElementById('booksGrid').innerHTML = 
             '<p class="error">Failed to load books. Please try again later.</p>';
     }
 }
 
-// Initialize the book grid based on config
 function initBookGrid() {
     const grid = document.getElementById('booksGrid');
     grid.innerHTML = '';
     
-    // Set grid layout from config
     grid.style.gridTemplateColumns = `repeat(${config.grid.cols}, 1fr)`;
     grid.style.gap = config.grid.gap;
     
-    // Calculate how many books to show (cols x rows)
     const booksToShow = Math.min(
         config.grid.cols * config.grid.rows,
         booksData.length
     );
     
-    // Create grid items
     for (let i = 0; i < booksToShow; i++) {
         const book = booksData[i];
         const bookElement = document.createElement('div');
@@ -103,20 +114,25 @@ function initBookGrid() {
         img.alt = book.title;
         img.dataset.index = i;
         
+        const titleOverlay = document.createElement('div');
+        titleOverlay.className = 'book-title';
+        titleOverlay.textContent = book.title;
+        
         img.addEventListener('click', () => showBookDetail(i));
         
         bookElement.appendChild(img);
+        bookElement.appendChild(titleOverlay);
         grid.appendChild(bookElement);
     }
 }
 
-// Show book details with configured timing
+// Book display functions
 function showBookDetail(index) {
     const book = booksData[index];
     const overlay = document.getElementById('overlay');
     const detailPanel = document.getElementById('bookDetail');
     
-    // Set the detail content
+    // Set content
     document.getElementById('detailCover').src = `covers/${book.cover}`;
     document.getElementById('detailTitle').textContent = book.title;
     document.getElementById('detailAuthor').textContent = `by ${book.author}`;
@@ -139,21 +155,41 @@ function showBookDetail(index) {
     // Show overlay
     overlay.classList.add('active');
     
-    // Find the clicked cover element
+    // Create animated cover
     const covers = document.querySelectorAll('.book-cover');
     const clickedCover = covers[index];
+    const animatedCover = clickedCover.cloneNode(true);
     
-    // Clone the clicked cover for animation
-    const animatedCover = clickedCover.cloneNode();
-    animatedCover.classList.add('active');
+    const rect = clickedCover.getBoundingClientRect();
+    animatedCover.style.position = 'fixed';
+    animatedCover.style.top = `${rect.top}px`;
+    animatedCover.style.left = `${rect.left}px`;
+    animatedCover.style.width = `${rect.width}px`;
+    animatedCover.style.height = `${rect.height}px`;
+    animatedCover.style.margin = '0';
+    animatedCover.style.zIndex = '1000';
+    animatedCover.style.transition = `all ${config.timing.coverExpand}s cubic-bezier(0.22, 1, 0.36, 1)`;
+    animatedCover.style.transformOrigin = 'center center';
+    animatedCover.style.willChange = 'transform, opacity';
+    
     document.body.appendChild(animatedCover);
     
-    // After cover expansion completes, wait configured pause, then show details
+    // Force reflow
+    void animatedCover.offsetWidth;
+    
+    // Enhanced animation with bigger scale
+    animatedCover.style.top = '50%';
+    animatedCover.style.left = '50%';
+    animatedCover.style.transform = 'translate(-50%, -50%) scale(1.5)';
+    animatedCover.style.borderRadius = '0';
+    animatedCover.style.boxShadow = '0 40px 80px rgba(0, 0, 0, 0.4)';
+    
+    // After animation completes
     setTimeout(() => {
-        animatedCover.remove();
+        animatedCover.style.opacity = '0';
         detailPanel.classList.add('active');
         
-        // Animate in content with configured timing
+        // Animate in content with adjusted timing
         const elements = [
             document.getElementById('detailCover'),
             document.querySelector('.detail-info'),
@@ -163,21 +199,22 @@ function showBookDetail(index) {
         
         elements.forEach((el, i) => {
             el.style.animation = 'none';
-            void el.offsetWidth; // Trigger reflow
-            el.style.animation = `fadeInContent 0.5s ease ${0.1 * i}s forwards`;
+            void el.offsetWidth;
+            el.style.animation = `fadeInUp ${config.timing.contentFadeIn}s ease ${i * 0.15 + 0.3}s forwards`;
         });
-    }, config.timing.coverExpand * 1000 + config.timing.pauseAfterExpand * 1000);
+        
+        // Remove cloned cover after transition
+        setTimeout(() => {
+            animatedCover.remove();
+        }, config.timing.coverExpand * 1000);
+    }, config.timing.coverExpand * 1000);
 }
 
-// Close book detail
 function closeBookDetail() {
     const overlay = document.getElementById('overlay');
     const detailPanel = document.getElementById('bookDetail');
     
-    detailPanel.classList.remove('active');
-    overlay.classList.remove('active');
-    
-    // Reset animations for next time
+    // Reset animations
     const elements = [
         document.getElementById('detailCover'),
         document.querySelector('.detail-info'),
@@ -188,9 +225,12 @@ function closeBookDetail() {
     elements.forEach(el => {
         el.style.animation = 'none';
     });
+    
+    overlay.classList.remove('active');
+    detailPanel.classList.remove('active');
 }
 
-// Auto-show random books with configured timing
+// Auto-show books
 function autoShowBooks() {
     if (booksData.length === 0) return;
     
@@ -206,12 +246,20 @@ function autoShowBooks() {
         
         currentBookIndex = nextIndex;
         
-        const initialDelay = isFirstBook ? config.timing.cycleDelay * 1000 : 300;
+        const initialDelay = isFirstBook ? config.timing.cycleDelay * 1000 : 0;
         isFirstBook = false;
         
         setTimeout(() => {
             showBookDetail(currentBookIndex);
-            setTimeout(showNextBook, totalCycleTime * 1000);
+            
+            // Set timeout for the next book based on display duration
+            setTimeout(() => {
+                closeBookDetail();
+                
+                // Set delay before showing next book
+                setTimeout(showNextBook, config.timing.cycleDelay * 1000);
+            }, (config.timing.displayDuration + config.timing.contentFadeIn) * 1000);
+            
         }, initialDelay);
     }
     
@@ -219,6 +267,14 @@ function autoShowBooks() {
 }
 
 // Initialize
-document.getElementById('closeBtn').addEventListener('click', closeBookDetail);
-document.getElementById('overlay').addEventListener('click', closeBookDetail);
-window.addEventListener('DOMContentLoaded', loadBookData);
+window.addEventListener('DOMContentLoaded', () => {
+    createParticles();
+    loadBookData();
+    
+    window.addEventListener('resize', () => {
+        createParticles();
+    });
+    
+    document.getElementById('closeBtn').addEventListener('click', closeBookDetail);
+    document.getElementById('overlay').addEventListener('click', closeBookDetail);
+});
