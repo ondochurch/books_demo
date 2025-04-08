@@ -2,24 +2,24 @@
 const config = {
     // Grid layout
     grid: {
-        cols: 5,
-        rows: 6,
-        gap: "1.5rem"
+        cols: 9,
+        rows: 5,
+        gap: "0.5rem"
     },
     
     // Timing controls (seconds)
     timing: {
-        coverExpand: 0.7,
+        coverExpand: 2.5,
         pauseAfterExpand: 2,
         contentFadeIn: 0.7,
         displayDuration: 10,
-        cycleDelay: 3
+        cycleDelay: 5
     },
     
     // Display settings
     display: {
-        maxBooks: 30,
-        randomOrder: true
+        maxBooks: 35,
+        randomOrder: false
     }
 };
 
@@ -70,10 +70,10 @@ function createParticles() {
 // Book data and initialization
 async function loadBookData() {
     try {
-        const response = await fetch('books.json');
+        const response = await fetch('books_data.json');
         if (!response.ok) throw new Error('Failed to load');
         booksData = await response.json();
-        
+        booksData = booksData.books;
         if (config.display.maxBooks > 0 && booksData.length > config.display.maxBooks) {
             booksData = booksData.slice(0, config.display.maxBooks);
         }
@@ -110,7 +110,7 @@ function initBookGrid() {
         
         const img = document.createElement('img');
         img.className = 'book-cover';
-        img.src = `covers/${book.cover}`;
+        img.src = `covers/${book.image_file}`;
         img.alt = book.title;
         img.dataset.index = i;
         
@@ -133,24 +133,24 @@ function showBookDetail(index) {
     const detailPanel = document.getElementById('bookDetail');
     
     // Set content
-    document.getElementById('detailCover').src = `covers/${book.cover}`;
+    document.getElementById('detailCover').src = `covers/${book.image_file}`;
     document.getElementById('detailTitle').textContent = book.title;
     document.getElementById('detailAuthor').textContent = `by ${book.author}`;
     document.getElementById('detailDescription').textContent = book.description;
     
     // Set reviews
-    const review1Element = document.getElementById('review1');
-    review1Element.querySelector('.review-text').textContent = book.reviews[0].text;
-    review1Element.querySelector('.review-author').textContent = book.reviews[0].author;
+    // const review1Element = document.getElementById('review1');
+    // review1Element.querySelector('.review-text').textContent = book.reviews[0].text;
+    // review1Element.querySelector('.review-author').textContent = book.reviews[0].author;
     
-    const review2Element = document.getElementById('review2');
-    if (book.reviews.length > 1) {
-        review2Element.querySelector('.review-text').textContent = book.reviews[1].text;
-        review2Element.querySelector('.review-author').textContent = book.reviews[1].author;
-        review2Element.style.display = 'block';
-    } else {
-        review2Element.style.display = 'none';
-    }
+    // const review2Element = document.getElementById('review2');
+    // if (book.reviews.length > 1) {
+    //     review2Element.querySelector('.review-text').textContent = book.reviews[1].text;
+    //     review2Element.querySelector('.review-author').textContent = book.reviews[1].author;
+    //     review2Element.style.display = 'block';
+    // } else {
+    //     review2Element.style.display = 'none';
+    // }
     
     // Show overlay
     overlay.classList.add('active');
@@ -180,33 +180,38 @@ function showBookDetail(index) {
     // Enhanced animation with bigger scale
     animatedCover.style.top = '50%';
     animatedCover.style.left = '50%';
-    animatedCover.style.transform = 'translate(-50%, -50%) scale(1.5)';
+    animatedCover.style.transform = 'translate(-50%, -50%) scale(3)';
     animatedCover.style.borderRadius = '0';
     animatedCover.style.boxShadow = '0 40px 80px rgba(0, 0, 0, 0.4)';
     
-    // After animation completes
+    // After cover expand animation completes
     setTimeout(() => {
-        animatedCover.style.opacity = '0';
-        detailPanel.classList.add('active');
-        
-        // Animate in content with adjusted timing
-        const elements = [
-            document.getElementById('detailCover'),
-            document.querySelector('.detail-info'),
-            document.querySelector('.reviews-section'),
-            document.getElementById('closeBtn')
-        ];
-        
-        elements.forEach((el, i) => {
-            el.style.animation = 'none';
-            void el.offsetWidth;
-            el.style.animation = `fadeInUp ${config.timing.contentFadeIn}s ease ${i * 0.15 + 0.3}s forwards`;
-        });
-        
-        // Remove cloned cover after transition
+        // Pause after expand
         setTimeout(() => {
-            animatedCover.remove();
-        }, config.timing.coverExpand * 1000);
+            animatedCover.style.opacity = '0';
+            detailPanel.classList.add('active');
+            
+            // Animate in content
+            const elements = [
+                document.getElementById('detailCover'),
+                document.querySelector('.detail-info'),
+                document.querySelector('.reviews-section'),
+                document.getElementById('closeBtn')
+            ];
+            
+            elements.forEach((el, i) => {
+                el.style.animation = 'none';
+                void el.offsetWidth;
+                el.style.animation = `fadeInUp ${config.timing.contentFadeIn}s ease ${i * 0.15}s forwards`;
+            });
+            
+            // Remove cloned cover after transition
+            setTimeout(() => {
+                animatedCover.remove();
+            }, config.timing.contentFadeIn * 1000);
+            
+        }, config.timing.pauseAfterExpand * 1000);
+        
     }, config.timing.coverExpand * 1000);
 }
 
@@ -240,11 +245,12 @@ function autoShowBooks() {
         closeBookDetail();
         
         let nextIndex;
-        do {
-            nextIndex = Math.floor(Math.random() * booksData.length);
-        } while (nextIndex === currentBookIndex && booksData.length > 1);
+        // do {
+        //     nextIndex = Math.floor(Math.random() * booksData.length);
+        // } while (nextIndex === currentBookIndex && booksData.length > 1);
         
-        currentBookIndex = nextIndex;
+        // currentBookIndex = nextIndex;
+        currentBookIndex++;
         
         const initialDelay = isFirstBook ? config.timing.cycleDelay * 1000 : 0;
         isFirstBook = false;
@@ -252,13 +258,19 @@ function autoShowBooks() {
         setTimeout(() => {
             showBookDetail(currentBookIndex);
             
-            // Set timeout for the next book based on display duration
+            // Calculate total display time including all phases
+            const totalDisplayTime = (
+                config.timing.coverExpand + 
+                config.timing.pauseAfterExpand + 
+                config.timing.contentFadeIn + 
+                config.timing.displayDuration
+            ) * 1000;
+            
+            // Set timeout for the next book
             setTimeout(() => {
                 closeBookDetail();
-                
-                // Set delay before showing next book
                 setTimeout(showNextBook, config.timing.cycleDelay * 1000);
-            }, (config.timing.displayDuration + config.timing.contentFadeIn) * 1000);
+            }, totalDisplayTime);
             
         }, initialDelay);
     }
