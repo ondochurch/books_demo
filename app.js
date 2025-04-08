@@ -12,7 +12,7 @@ const config = {
         coverExpand: 2.5,
         pauseAfterExpand: 0.5,
         contentFadeIn: 0.7,
-        displayDuration: 2,
+        displayDuration: 5,
         cycleDelay: 2
     },
     
