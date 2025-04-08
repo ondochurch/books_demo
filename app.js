@@ -2,18 +2,25 @@
 const config = {
     // Grid layout
     grid: {
-        cols: 9,
+        cols: 8,
         rows: 5,
         gap: "0.5rem"
     },
     
     // Timing controls (seconds)
+    // timing: {
+    //     coverExpand: 2.5,
+    //     pauseAfterExpand: 0.5,
+    //     contentFadeIn: 0.7,
+    //     displayDuration: 5,
+    //     cycleDelay: 2
+    // },
     timing: {
-        coverExpand: 2.5,
-        pauseAfterExpand: 2,
-        contentFadeIn: 0.7,
-        displayDuration: 10,
-        cycleDelay: 5
+        coverExpand: 0.5,
+        pauseAfterExpand: 0.2,
+        contentFadeIn: 0.2,
+        displayDuration: 0.5,
+        cycleDelay: 0.5
     },
     
     // Display settings
@@ -41,13 +48,13 @@ function createParticles() {
     const particlesContainer = document.querySelector('.particles');
     particlesContainer.innerHTML = '';
     
-    const particleCount = Math.floor(window.innerWidth / 20);
+    const particleCount = Math.floor(window.innerWidth / 10);
     
     for (let i = 0; i < particleCount; i++) {
         const particle = document.createElement('div');
         particle.className = 'particle';
         
-        const size = Math.random() * 8 + 2;
+        const size = Math.random() * 50 + 2;
         const posX = Math.random() * window.innerWidth;
         const posY = Math.random() * window.innerHeight + window.innerHeight;
         const delay = Math.random() * 5;
@@ -168,7 +175,7 @@ function showBookDetail(index) {
     animatedCover.style.height = `${rect.height}px`;
     animatedCover.style.margin = '0';
     animatedCover.style.zIndex = '1000';
-    animatedCover.style.transition = `all ${config.timing.coverExpand}s cubic-bezier(0.22, 1, 0.36, 1)`;
+    animatedCover.style.transition = `all ${config.timing.coverExpand}s cubic-bezier(0.22, 1, 0.06, 1)`;
     animatedCover.style.transformOrigin = 'center center';
     animatedCover.style.willChange = 'transform, opacity';
     
@@ -251,7 +258,10 @@ function autoShowBooks() {
         
         // currentBookIndex = nextIndex;
         currentBookIndex++;
-        
+        if(currentBookIndex > booksData.length) {
+            currentBookIndex = 0;
+            isFirstBook = true;
+        }
         const initialDelay = isFirstBook ? config.timing.cycleDelay * 1000 : 0;
         isFirstBook = false;
         
