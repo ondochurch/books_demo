@@ -8,19 +8,12 @@ const config = {
     },
     
     // Timing controls (seconds)
-    // timing: {
-    //     coverExpand: 2.5,
-    //     pauseAfterExpand: 0.5,
-    //     contentFadeIn: 0.7,
-    //     displayDuration: 5,
-    //     cycleDelay: 2
-    // },
     timing: {
-        coverExpand: 0.5,
-        pauseAfterExpand: 0.2,
-        contentFadeIn: 0.2,
-        displayDuration: 0.5,
-        cycleDelay: 0.5
+        coverExpand: 2.5,
+        pauseAfterExpand: 0.5,
+        contentFadeIn: 0.7,
+        displayDuration: 2,
+        cycleDelay: 2
     },
     
     // Display settings
@@ -258,7 +251,7 @@ function autoShowBooks() {
         
         // currentBookIndex = nextIndex;
         currentBookIndex++;
-        if(currentBookIndex > booksData.length) {
+        if(currentBookIndex >= booksData.length) {
             currentBookIndex = 0;
             isFirstBook = true;
         }
