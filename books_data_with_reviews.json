@@ -12,7 +12,13 @@
       "cover_url": "https://image.aladin.co.kr/product/17560/38/cover500/8936513192_1.jpg",
       "description": "《스크루테이프의 편지》는 경험 많고 노회한 고참 악마 스크루테이프가 자신의 조카이자 풋내기 악마인 웜우드에게 인간을 유혹하는 방법에 대해 충고하는 서른한 통의 편지이다. 사소한 일들로 유발되는 가족 간의 갈등, 기도에 관한 오해, 영적 침체, 영적 요소와 동물적 요소를 공유하는 인간의 이중성, 변화와 영속성의 관계, 남녀 차이, 사랑, 웃음, 쾌락, 욕망 등 삶의 본질을 이루는 다양한 영역을 아우른다.",
       "detail_url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=175603868",
-      "image_file": "001_스크루테이프의 편지  알라딘_C. S. 루이스, Clive Staples Lewis.jpg"
+      "image_file": "001_스크루테이프의 편지  알라딘_C. S. 루이스, Clive Staples Lewis.jpg",
+      "reviews": [
+        {
+          "author": "김애리",
+          "text": "Funny, sarcastic and thoughtful. 스크루테이프와 맞장뜨고 싶으신 분 읽어보세요"
+        }
+      ]
     },
     {
       "title": "평범함 속의 권능",
@@ -40,7 +46,7 @@
       "description": "‘이미’ 의롭다 하심을 입었으나 ‘아직’은 불완전한 우리를 영적 성숙의 길로 안내한다. 거대하고 까다로운 주제인 ‘성화’를 적실한 사례와 누구나 공감할 수 있는 일상의 언어로 풀어냈다.",
       "detail_url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=88680242",
       "image_file": "004_온전한 성화  알라딘_고든 스미스, Gordon T. Smith.jpg"
-    },    
+    },
     {
       "title": "창조론 연대기",
       "author": "김민석",
@@ -48,7 +54,21 @@
       "cover_url": "",
       "detail_url": "",
       "description": "현재 한국교회 다수를 지배하는 젊은지구 창조론의 문제점과, 오랜지구 창조론, 진화적 창조론 및 우주 성전론에 이르기까지 창세기 1장을 둘러싼 다양한 신학적 해석과 더불어 그것이 현대과학과 맺고 있는 함의에 대해 쉽고 재미있게 그려냈다. 이 책은 누구나 한 번 이상 고민했을 법한 주제를 다룬다. 준이와 수영을 중심으로 펼쳐지는 교회 청소년들의 신앙과 사랑, 우정과 고민을 따라가다 보면 어느덧 옛 학창시절의 추억 속에 깊이 빠져들 것이다. 기독교 신앙과 과학의 관계에 대해 관심이 있지만 막상 체계적으로 공부하려면 신학과 과학의 특성 때문에 망설여지는 기독교인들에게 이 책은 친절한 길라잡이가 될 것이다.",
-      "image_file": "036_창조론연대기.jpg"
+      "image_file": "036_창조론연대기.jpg",
+      "reviews": [
+        {
+          "author": "김애리",
+          "text": "아직도 젊은 지구, 창조과학이란 사이비 과학을 믿는다면 이 책을 입문서로 무지에서 깨어나길 바래요"
+        },
+        {
+          "author": "안재욱",
+          "text": "만화라서 좋은 접근성 떄문에 간과하기 쉬운 깊이"
+        },
+        {
+          "author": "송태선",
+          "text": "성경 해석의 과학적 오용을 일깨워준 책"
+        }
+      ]
     },
     {
       "title": "요한복음 뒷조사",
@@ -84,7 +104,13 @@
       "cover_url": "https://image.aladin.co.kr/product/17332/43/cover500/8963602699_1.jpg",
       "description": "주목받는 소장신학자 데이비드 깁슨의 전도서 강해로 무거운 강해서 이미지를 탈피하고 생활 속 예화를 통해 성경을 에세이식으로 풀어 간다. 전도서 전체를 ‘죽음’이라는 키워드로 조명해 ‘죽음을 준비할 때에야 삶을 제대로 살아갈 수 있음’을 설득력 있게 전한다.",
       "detail_url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=173324382",
-      "image_file": "007_인생, 전도서를 읽다  알라딘_데이비드 깁슨, David Gibson.jpg"
+      "image_file": "007_인생, 전도서를 읽다  알라딘_데이비드 깁슨, David Gibson.jpg",
+      "reviews": [
+        {
+          "author": "김애리",
+          "text": "삶은 수익이 아니라 선물이다. 수고를 통해 이윤을 얻으려는 노력을 포기하고, 하나님이 당신에게 주신 것들을 그대로 누리려고 애써 보라."
+        }
+      ]
     },
     {
       "title": "나를 따르라 ",
@@ -93,7 +119,13 @@
       "cover_url": "https://image.aladin.co.kr/product/30508/44/cover500/k012830292_2.jpg",
       "description": "본회퍼 당대와 서거 직후에 출간된 초판(독일어 원문)을 토대로 본회퍼 본연의 숨결을 느낄 수 있으며, 오랫동안 본회퍼 관련 저작들을 번역해 온 역자들의 수려하고 역동적인 번역으로 본회퍼의 삶과 신학을 생생하게 접할 수 있는 책이다.",
       "detail_url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=305084465",
-      "image_file": "008_나를 따르라  알라딘_디트리히 본회퍼, Dietrich Bonhoeffer.jpg"
+      "image_file": "008_나를 따르라  알라딘_디트리히 본회퍼, Dietrich Bonhoeffer.jpg",
+      "reviews": [
+        {
+          "author": "안재욱",
+          "text": "Nachfolge! \"네가 선택한 업적이나 네가 생각한 고난이 아니라 너의 선택과 생각과 욕망을 거슬러 네게 다가오시는 분이 너를 인도할 것이다. 나를 따르라.\""
+        }
+      ]
     },
     {
       "title": "하나님이 캐스팅한 사람들 ",
@@ -102,7 +134,17 @@
       "cover_url": "https://image.aladin.co.kr/product/641/24/cover500/8953113253_1.jpg",
       "description": "하나님이 캐스팅한 성경의 다양한 인물들을 담은 책이다. 미국의 대표적인 복음주의 작가이자 목회자인 저자 맥스 루케이도가 하나님의 자비와 은총을 성경의 인물들을 통해 그린다. 1부는 요셉, 마태, 사마리아 여인, 사도 요한 등의 신약의 인물들로, 2부는 므비보셋, 아비가일, 모세, 다윗, 에스더 등의 구약의 인물들로 구성되었다.",
       "detail_url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=6412411",
-      "image_file": "009_하나님이 캐스팅한 사람들  알라딘_맥스 루케이도, Max Lucado.jpg"
+      "image_file": "009_하나님이 캐스팅한 사람들  알라딘_맥스 루케이도, Max Lucado.jpg",
+      "reviews": [
+        {
+          "author": "김애리",
+          "text": "별 볼일 없는 한심한 당신과 나도 하나님께 캐스팅될 수 있습니다!"
+        },
+        {
+          "author": "송태선",
+          "text": "연약한 사람들을 통해 일하시는 하나님의 따뜻한 은혜, 이미 케스팅 된 우리"
+        }
+      ]
     },
     {
       "title": "비전공자도 이해할 수 있는 AI 지식 ",
@@ -111,7 +153,21 @@
       "cover_url": "https://image.aladin.co.kr/product/34937/43/cover500/k952934366_1.jpg",
       "description": "이 책은 대표적인 AI의 8가지 쓸모를 자세히 소개하며, 이에 그치지 않고 각 서비스가 어떻게 작동하는지 구체적인 원리를 비전공자도 이해하기 쉽도록 설명한다. 이를 통해 기술과 과학에 대한 이해를 넓히고, 업무와 일상에 잘 활용하는 법을 배우고, 다른 분야에도 널리 응용하여 도움이 될 수 있도록 했다. AI가 무엇이고 실생활에 어떻게 쓰이는지 알고 싶은 일반인부터, 기술 분야 투자자, AI 분야로 진로를 고민하는 사람들, AI 개발을 위한 기초지식이 필요한 개발자까지, 두루 AI의 쓸모에 대한 통찰을 얻을 수 있을 것이다.",
       "detail_url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=349374326",
-      "image_file": "010_비전공자도 이해할 수 있는 AI 지식 (10만부 기념 개정판)  알라딘_박상길.jpg"
+      "image_file": "010_비전공자도 이해할 수 있는 AI 지식 (10만부 기념 개정판)  알라딘_박상길.jpg",
+      "reviews": [
+        {
+          "author": "김애리",
+          "text": "3개월이면 out of date가 된다는 AI 발전 현실에서 인공지능에 대한 기본개념을 알려주는 책. 그리스도인도 배워야 산다!"
+        },
+        {
+          "author": "안재욱",
+          "text": "AI에게 전도해 보자"
+        },
+        {
+          "author": "송태선",
+          "text": "AI 시대, 기술을 다스리되 마음은 하나님께로 붙들려 있자"
+        }
+      ]
     },
     {
       "title": "믿음의 본질 ",
@@ -120,7 +176,17 @@
       "cover_url": "https://image.aladin.co.kr/product/19183/39/cover500/k772635809_1.jpg",
       "description": "박영선 목사가 ‘믿음’에 대해 이야기한다. 믿음은 인격과 인격 사이에서만 성립한다. 믿음은 우리에게 끊임없이 생각하고 고민하고 분별하기를 요구한다.",
       "detail_url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=191833956",
-      "image_file": "011_믿음의 본질  알라딘_박영선.jpg"
+      "image_file": "011_믿음의 본질  알라딘_박영선.jpg",
+      "reviews": [
+        {
+          "author": "안재욱",
+          "text": "하나님이 나를 먼저 믿어주신다는 놀라운 가르침"
+        },
+        {
+          "author": "송태선",
+          "text": "믿음은 선물이다라는 최고의 수확을 준 책"
+        }
+      ]
     },
     {
       "title": "한나의 아이 ",
@@ -147,7 +213,13 @@
       "cover_url": "https://image.aladin.co.kr/product/31871/52/cover500/k182833524_1.jpg",
       "description": "20세기 마지막 청교도인 아더 핑크의 저술 중 대표작이다. 아더 핑크가 무려 25년 이상 심혈인 기울인 기독교 신앙의 핵심을 담았다. 성도가 왜 거룩하게 살아야 하는 지에 대한 오해와 궁금증이 시원하게 풀린다.",
       "detail_url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=318715296",
-      "image_file": "014_아더 핑크의 성화론  알라딘_아더 핑크, Authur W. Pink.jpg"
+      "image_file": "014_아더 핑크의 성화론  알라딘_아더 핑크, Authur W. Pink.jpg",
+      "reviews": [
+        {
+          "author": "송태선",
+          "text": "성화, 하나님 자녀답게 살아내는 은혜의 싸움"
+        }
+      ]
     },
     {
       "title": "알리스터 맥그래스의 기독교 변증 ",
@@ -165,7 +237,17 @@
       "cover_url": "https://image.aladin.co.kr/product/30763/31/cover500/k322830559_1.jpg",
       "description": "신학이 왜 중요한가? 오늘 우리에게 왜 신학이 필요한가? 그리스도인이 생각하고 살아가는 방식에 신학은 어떤 변화를 일으킬 수 있는가? 옥스퍼드의 신학자 알리스터 맥그라스가 퇴임을 앞두고 들려주는 신학의 핵심.",
       "detail_url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=307633157",
-      "image_file": "016_신학이 무슨 소용이냐고 묻는 이들에게  알라딘_알리스터 맥그래스, Alister E. McGrath.jpg"
+      "image_file": "016_신학이 무슨 소용이냐고 묻는 이들에게  알라딘_알리스터 맥그래스, Alister E. McGrath.jpg",
+      "reviews": [
+        {
+          "author": "안재욱",
+          "text": "\"신앙의 세계에 관한 지도를 지성적으로 그려나가는 작업이 신학\""
+        },
+        {
+          "author": "송태선",
+          "text": "\"아는 만큼 믿고, 아는 만큼 깊어진다.\""
+        }
+      ]
     },
     {
       "title": "과학시대의 도전과 기독교의 응답 ",
@@ -183,7 +265,13 @@
       "cover_url": "https://image.aladin.co.kr/product/2164/58/cover500/8934112441_1.jpg",
       "description": "워렌 W. 위어스비가 하나님의 일꾼들에게 들려주는 조언을 묶은 책이다. 1951년에 목사 안수를 받은 이래로 그는 60여 년간 현장에서 그리고 세계 다양한 사역자들과 성도들을 강연과 글을 통해 만나고 경험하면서 어떤 자세로 사역해야 하는지 깨달았다.",
       "detail_url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=21645801",
-      "image_file": "018_하나님의 일꾼과 사역  알라딘_워렌 W. 위어스비, Warren W. Wiersbe.jpg"
+      "image_file": "018_하나님의 일꾼과 사역  알라딘_워렌 W. 위어스비, Warren W. Wiersbe.jpg",
+      "reviews": [
+        {
+          "author": "김은경",
+          "text": "기독교인으로서 가져야 하는 자세와 어떻게 사역해야 하는지 꺠닫게 된다. \"목회자의 목회자\"로 불리는 저자의 다양한 경험에서 쓰여진 30가지 기록들은 지헤서와 같다."
+        }
+      ]
     },
     {
       "title": "사피엔스 ",
@@ -192,7 +280,13 @@
       "cover_url": "https://image.aladin.co.kr/product/31424/4/cover500/k482832219_1.jpg",
       "description": "현재 인류는 그 어느 때보다 어려운 상황을 맞고 있다. 난국을 헤쳐나가기 위해 무엇을 해야 할까? 저자는 더 나은 세상을 위한 키워드로 ‘인간 이해’를 강조한다.",
       "detail_url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=314240466",
-      "image_file": "019_사피엔스  알라딘_유발 하라리, Yuval Noah Harari.jpg"
+      "image_file": "019_사피엔스  알라딘_유발 하라리, Yuval Noah Harari.jpg",
+      "reviews": [
+        {
+          "author": "김애리",
+          "text": "3만년 전에 사피엔스가 유일하게 살아남은 인류종이 된 이유는 무엇인지 궁금하시다면 당장 이책을 읽어보세요!"
+        }
+      ]
     },
     {
       "title": "그 길을 걸으라 ",
@@ -201,7 +295,13 @@
       "cover_url": "https://image.aladin.co.kr/product/17334/61/cover500/8932816565_1.jpg",
       "description": "유진 피터슨 영성 시리즈 3권. 예수님을 따르면서 우리의 성경적 상상력을 회복하는 일에 대한 책이다. 예수님을 따르는 사람이 된다는 것의 핵심을 건드리며 우리에게 성경적으로 조건 지워진 형용사들을 회복해 준다.",
       "detail_url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=173346128",
-      "image_file": "020_그 길을 걸으라 (반양장)  알라딘_유진 피터슨, Eugene H. Peterson.jpg"
+      "image_file": "020_그 길을 걸으라 (반양장)  알라딘_유진 피터슨, Eugene H. Peterson.jpg",
+      "reviews": [
+        {
+          "author": "안재욱",
+          "text": "예수님을 \"어떻게\" 따라야 할지가 중요하다"
+        }
+      ]
     },
     {
       "title": "비유로 말하라",
@@ -237,7 +337,17 @@
       "cover_url": "https://image.aladin.co.kr/product/1129/55/cover500/8992247516_1.jpg",
       "description": "역사학자이며 성경통독 전문가인 통박사 조병호가 출간한 신작. 선행학습으로 다룬 ‘애굽’을 비롯, 본격적으로 앗수르, 바벨론, 페르시아, 헬라, 로마, 5대 제국의 역사를 성경의 역사와 더불어 통通으로 담았다. 영국에서 8년간 유학하며 서구 역사에 관한 인식과 지식을 접하고, 이후 동양의 방법론과 서양의 방법론을 묶어 ‘통’ 방법론을 내어놓은 바 있는 저자의 통찰과 혜안을 엿보게 한다.",
       "detail_url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=11295568",
-      "image_file": "023_성경과 5대 제국  알라딘_조병호, Byoungho Zoh.jpg"
+      "image_file": "023_성경과 5대 제국  알라딘_조병호, Byoungho Zoh.jpg",
+      "reviews": [
+        {
+          "author": "안재욱",
+          "text": "어렵게만 느꼈던 구약에 대해 새로운 관심을 갖게 해준 책"
+        },
+        {
+          "author": "송태선",
+          "text": "5대 제국을 통한 구약의 흐름을 잡아준 새로운 시각"
+        }
+      ]
     },
     {
       "title": "구원이란 무엇인가 ",
@@ -273,7 +383,13 @@
       "cover_url": "https://image.aladin.co.kr/product/1110/70/cover500/8932812322_1.jpg",
       "description": "환경문제에서 인권문제, 포스트모더니즘, 동성애 논쟁에 이르기까지 현대 사회의 수많은 이슈들에 대한 올바른 대처법을 살펴본다. 지은이는 그리스도인에게 단순히 종교적인 전도의 책임 뿐 아니라 사회적인 책임도 있다는 사실을 지적하며, 성경을 바탕으로 고대성과 현대성 사이에서 방황하는 현대인들에게 올바른 방향을 제시하고자 한다.",
       "detail_url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=11107059",
-      "image_file": "027_현대 사회 문제와 그리스도인의 책임  알라딘_존 스토트, John R. W. Stott.jpg"
+      "image_file": "027_현대 사회 문제와 그리스도인의 책임  알라딘_존 스토트, John R. W. Stott.jpg",
+      "reviews": [
+        {
+          "author": "안재욱",
+          "text": "현대 사회 문제와 관련, 균형 잡힌 그리스도인의 태도를 향한 첫 걸음"
+        }
+      ]
     },
     {
       "title": "구약의 사람들 ",
@@ -282,15 +398,38 @@
       "cover_url": "https://image.aladin.co.kr/product/31443/31/cover500/8954773338_1.jpg",
       "description": "고대근동학자 주원준은 첫째성경(구약성경) 속 인물들을 한 명 한 명 호명하며 이들의 진짜 이야기를 들려준다. 고대근동 세계의 맥락에서 다른 신화들과 병행해 살펴보는 동시에 역사적 배경을 바탕으로 이들의 삶 속으로 들어가 새로운 성찰과 해석을 감행한다.",
       "detail_url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=314433114",
-      "image_file": "028_구약의 사람들  알라딘_주원준.jpg"
+      "image_file": "028_구약의 사람들  알라딘_주원준.jpg",
+      "reviews": [
+        {
+          "author": "김애리",
+          "text": "고대근동의 배경지식을 바탕으로 구약을 새롭고 참신한 시각으로 공부할 수 있는 책.  무엇보다 아주 재미있습니다"
+        },
+        {
+          "author": "안재욱",
+          "text": "책으로 떠나는 성지순례"
+        },
+        {
+          "author": "송태선",
+          "text": "성경안의 빈 구석으로 초대하시는 하나님,\n연약한 자를 사용하시는 하나님"
+        }
+      ]
     },
     {
       "title": "시간은 흐르지 않는다",
       "author": "카를로 로벨리",
       "description": "시간에 관한 우주의 거대한 이야기가 온전히 담겨 있는 『시간은 흐르지 않는다』. 양자중력 이론의 선구자이자 세계적인 물리학자 카를로 로벨리의 세 번째 책으로, ‘시간이란 도대체 무엇일까?’, ‘시간이 흐른다는 것은 실제로 어떤 의미일까?’, ‘우리가 이곳에서 경험하는 시간과 우주의 시간은 다른 것일까?’, ‘왜 과거는 떠올릴 수 있고 미래는 떠올릴 수 없을까?’와 같은 질문들에 대한 충실한 답변을 담고 있다.",
-      "image_file": "시간은_흐르지_않는다.jpg"
+      "image_file": "시간은_흐르지_않는다.jpg",
+      "reviews": [
+        {
+          "author": "김애리",
+          "text": "당신과 나의 시간은 같은 리듬과 속도를 갖지 않습니다. 아무것도 변하지 않으면 시간은 없습니다."
+        },
+        {
+          "author": "송태선",
+          "text": "\"시간은 흐른다는 본능 깊숙이 박혀 있던 깨지기 힘든 착각과의 사투 속에서, 사건의 연속인 프레임 같은 우리 삶에 구원을 이루신 하나님의 은혜를 다시 바라보다.\""
+        }
+      ]
     },
-    
     {
       "title": "모든 사람을 위한 요한계시록 ",
       "author": "톰 라이트, N. T. Wright",
@@ -307,7 +446,13 @@
       "cover_url": "https://image.aladin.co.kr/product/4140/69/cover500/8953120500_1.jpg",
       "description": "달라스 윌라드가 이 시대에 가장 주목할 목회자로 손꼽은 탁월한 설교자이자 뉴욕타임스가 꼽은 베스트셀러 작가인 팀 켈러. 그가 강단에서 전한 설교 시리즈를 토대로 엮은 이 책은 모든 이들에게 성경이 가르치는 바람직한 결혼 생활의 큰 그림을 보여 준다.",
       "detail_url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=41406915",
-      "image_file": "031_팀 켈러, 결혼을 말하다  알라딘_팀 켈러, Timothy Keller.jpg"
+      "image_file": "031_팀 켈러, 결혼을 말하다  알라딘_팀 켈러, Timothy Keller.jpg",
+      "reviews": [
+        {
+          "author": "김은경",
+          "text": "싱글과 커플들 결혼에 대한 바른 시각을 갖게 된다."
+        }
+      ]
     },
     {
       "title": "팀 켈러의 기도 ",
