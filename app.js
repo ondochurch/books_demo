@@ -4,7 +4,7 @@ const config = {
     grid: {
         cols: 8,
         rows: 5,
-        gap: "0.5rem"
+        gap: "0.9rem"
     },
     
     // Timing controls (seconds)

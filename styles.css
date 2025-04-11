@@ -214,7 +214,6 @@ h1, h2, h3 {
 .book-detail.active {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
-    animation: float 6s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -353,7 +352,7 @@ h1, h2, h3 {
     backdrop-filter: blur(1px);
     z-index: 98;
     opacity: 0;
-    transition: var(--transition);
+    transition: opacity 0.4s ease 0.4s, transform 0.4s ease 0.4s;
     pointer-events: none;
 }
 
