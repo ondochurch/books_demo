@@ -89,7 +89,7 @@ function createParticles() {
 // Book data and initialization
 async function loadBookData() {
     try {
-        const response = await fetch('books_data.json');
+        const response = await fetch('books_data_with_reviews.json');
         if (!response.ok) throw new Error('Failed to load');
         booksData = await response.json();
         booksData = booksData.books;
@@ -167,6 +167,7 @@ function showBookDetail(index) {
     ];
 
     if (Array.isArray(book.reviews) && book.reviews.length > 0) {
+        document.getElementById('noReviewMessage').style.display = 'none';
         reviewElements.forEach((el, i) => {
             if (book.reviews[i]) {
                 el.querySelector('.review-text').textContent = book.reviews[i].text;
@@ -177,11 +178,12 @@ function showBookDetail(index) {
             }
         });
     } else {
-        // Hide all review elements if no valid reviews
         reviewElements.forEach(el => {
             el.style.display = 'none';
         });
+        document.getElementById('noReviewMessage').style.display = 'block';
     }
+ 
     
     // Show overlay
     overlay.classList.add('active');

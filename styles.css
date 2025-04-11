@@ -304,13 +304,13 @@ h1, h2, h3 {
 }
 
 .review-text {
-    font-style: italic;
     margin-bottom: 0.5rem;
     color: #495057;
     line-height: 1.6;
 }
 
 .review-author {
+    font-style: italic;
     font-weight: 600;
     color: var(--primary-color);
 }
