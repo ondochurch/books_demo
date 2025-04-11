@@ -1,14 +1,10 @@
 :root {
-    --primary-color: #4361ee;
-    --secondary-color: #3a0ca3;
-    --accent-color: #f72585;
-    --light-color: #f8f9fa;
-    --dark-color: #212529;
-    --bg-gradient: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%);
-    --shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    --glass-effect: rgba(255, 255, 255, 0.08);
-}
+    --main-color: #e1a23b;     /* Matches the ochre/gold tone */
+    --accent-color: #f4d28c;   /* Lighter warm accent */
+    --background-color: #fff8f0; /* Very soft warm background */
+    --text-color: #333333;     /* Neutral dark for readability */
+    --heading-color: #1f1f1f;  /* Slightly softer than black */
+  }
 
 * {
     margin: 0;
@@ -18,12 +14,10 @@
 }
 
 body {
-    background: #f8f9fa;
-    color: var(--dark-color);
-    line-height: 1.6;
-    overflow-x: hidden;
-    min-height: 100vh;
-}
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
 
 .container {
     max-width: 1400px;
@@ -49,14 +43,35 @@ header::after {
     border-radius: 2px;
 }
 
-h1 {
-    color: var(--secondary-color);
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    font-size: 2.5rem;
-    letter-spacing: -0.5px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
+h1, h2, h3 {
+    color: var(--heading-color);
+  }
+
+  .logo {
+    color: var(--main-color);
+  }
+  
+  .button {
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+  }
+  
+  .card {
+    background: white;
+    border: 2px solid var(--main-color);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  }
 
 .subtitle {
     color: #6c757d;
@@ -77,6 +92,7 @@ h1 {
     transition: var(--transition);
     transform-style: preserve-3d;
     border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
     overflow: hidden;
 }
 

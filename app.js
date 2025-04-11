@@ -12,7 +12,7 @@ const config = {
         coverExpand: 2.5,
         pauseAfterExpand: 0.5,
         contentFadeIn: 0.7,
-        displayDuration: 5,
+        displayDuration: 8,
         cycleDelay: 2
     },
     
@@ -40,32 +40,51 @@ function shuffleArray(array) {
 function createParticles() {
     const particlesContainer = document.querySelector('.particles');
     particlesContainer.innerHTML = '';
-    
+
     const particleCount = Math.floor(window.innerWidth / 10);
-    
+
+    // 🎨 Color scheme based on your theme (warm + soft complementary tones)
+    const colors = [
+        'rgba(225, 162, 59, ALPHA)',   // ochre gold
+        'rgba(244, 210, 140, ALPHA)',  // light gold
+        'rgba(199, 141, 58, ALPHA)',   // bronze
+        'rgba(255, 204, 153, ALPHA)',  // peach
+        'rgba(255, 179, 186, ALPHA)',  // soft rose
+        'rgba(189, 224, 216, ALPHA)',  // mint/sage
+        'rgba(174, 198, 207, ALPHA)',  // soft blue-grey
+        'rgba(210, 180, 222, ALPHA)',  // lavender
+        'rgba(255, 239, 197, ALPHA)',  // pale yellow
+        'rgba(144, 190, 222, ALPHA)'   // sky blue
+    ];
+
     for (let i = 0; i < particleCount; i++) {
         const particle = document.createElement('div');
         particle.className = 'particle';
-        
+
         const size = Math.random() * 50 + 2;
         const posX = Math.random() * window.innerWidth;
         const posY = Math.random() * window.innerHeight + window.innerHeight;
         const delay = Math.random() * 5;
         const duration = Math.random() * 15 + 10;
         const alpha = Math.random() * 0.4 + 0.1;
-        
+
+        // Choose a base color and insert the alpha
+        const baseColor = colors[Math.floor(Math.random() * colors.length)];
+        const colorWithAlpha = baseColor.replace('ALPHA', alpha.toFixed(2));
+
         particle.style.width = `${size}px`;
         particle.style.height = `${size}px`;
         particle.style.left = `${posX}px`;
         particle.style.top = `${posY}px`;
         particle.style.animationDelay = `${delay}s`;
         particle.style.animationDuration = `${duration}s`;
-        particle.style.backgroundColor = `rgba(67, 97, 238, ${alpha})`;
+        particle.style.backgroundColor = colorWithAlpha;
         particle.style.opacity = '0';
-        
+
         particlesContainer.appendChild(particle);
     }
 }
+
 
 // Book data and initialization
 async function loadBookData() {
@@ -138,19 +157,31 @@ function showBookDetail(index) {
     document.getElementById('detailAuthor').textContent = `by ${book.author}`;
     document.getElementById('detailDescription').textContent = book.description;
     
-    // Set reviews
-    // const review1Element = document.getElementById('review1');
-    // review1Element.querySelector('.review-text').textContent = book.reviews[0].text;
-    // review1Element.querySelector('.review-author').textContent = book.reviews[0].author;
-    
-    // const review2Element = document.getElementById('review2');
-    // if (book.reviews.length > 1) {
-    //     review2Element.querySelector('.review-text').textContent = book.reviews[1].text;
-    //     review2Element.querySelector('.review-author').textContent = book.reviews[1].author;
-    //     review2Element.style.display = 'block';
-    // } else {
-    //     review2Element.style.display = 'none';
-    // }
+    // Set up to 4 reviews
+    const reviewsSection = document.querySelector('.reviews-section');
+    const reviewElements = [
+        document.getElementById('review1'),
+        document.getElementById('review2'),
+        document.getElementById('review3'),
+        document.getElementById('review4')
+    ];
+
+    if (Array.isArray(book.reviews) && book.reviews.length > 0) {
+        reviewElements.forEach((el, i) => {
+            if (book.reviews[i]) {
+                el.querySelector('.review-text').textContent = book.reviews[i].text;
+                el.querySelector('.review-author').textContent = book.reviews[i].author;
+                el.style.display = 'block';
+            } else {
+                el.style.display = 'none';
+            }
+        });
+    } else {
+        // Hide all review elements if no valid reviews
+        reviewElements.forEach(el => {
+            el.style.display = 'none';
+        });
+    }
     
     // Show overlay
     overlay.classList.add('active');
