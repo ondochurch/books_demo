@@ -18,7 +18,7 @@ const config = {
     
     // Display settings
     display: {
-        maxBooks: 35,
+        maxBooks: 40,
         randomOrder: false
     }
 };
@@ -26,6 +26,8 @@ const config = {
 // Global variables
 let booksData = [];
 let currentBookIndex = -1;
+let animationActive = true;
+let animationTimeouts = [];
 
 // Helper functions
 function shuffleArray(array) {
