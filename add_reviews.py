@@ -3,7 +3,7 @@ import csv
 
 # File paths (update as needed)
 json_path = 'books_data.json'
-csv_path = '/Users/codex/Downloads/사명자반 북클럽 리뷰 - 시트1-3.csv'
+csv_path = 'reviews.csv'
 output_path = 'books_data_with_reviews.json'
 
 # Step 1: Load the book JSON data
